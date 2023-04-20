@@ -10,7 +10,8 @@ package entidad;
  * @author MI EQUIPO
  */
 public class Cafetera {
-    private int capacidadMaxima;
+    
+    int capacidadMaxima;
     private int cantActual;
 
     public Cafetera() {
@@ -44,3 +45,5 @@ public class Cafetera {
     
     
 }
+    
+

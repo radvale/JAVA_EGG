@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package servicio;
+
 import entidad.Cafetera;
 import java.util.Scanner;
 
@@ -14,6 +15,13 @@ import java.util.Scanner;
 public class cafeteraServicio {
      Scanner leer = new Scanner(System.in);
     
+     public Cafetera crear(){
+         System.out.println("ingrese tipo de cafetera ");
+         String tipo = leer.next();
+         return new Cafetera();
+     }
+     
+     
   public void llenarCafeter(Cafetera p1){
       System.out.println("cual es la capacidad maxima de su cafetera?");
       p1.setCapacidadMaxima(leer.nextInt());
@@ -52,3 +60,4 @@ public class cafeteraServicio {
   }
   
 }
+
